@@ -87,7 +87,8 @@
          if (mysqli_stmt_execute($stmt))
          {
             
-             header("location: login.php");
+       
+             header("location: login2.php");
          }
          else{
              echo "Something went wrong... cannot redirect!";

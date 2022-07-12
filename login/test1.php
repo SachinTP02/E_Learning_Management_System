@@ -7,65 +7,25 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
     header("location: login.php");
 }
 
-
 ?>
 
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title> Profile Card</title>
+  <meta charset="UTF-8">
+  <title> Profile Card</title>
   <meta name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="profile-card\dist\style1.css">
-<link rel="stylesheet" href="dashboard.css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+<link rel="stylesheet" href="profile-card\dist\style.css">
 
 </head>
 <body>
 
-    <div class="container">
-        <nav>
-            <ul>
-                <li><a href="#" class="logo">
-                    <img src="./logo.png" alt="" />
-                    <span class="nav-item"><?php echo "Hi " . $_SESSION['email']?></span>
-                </a></li>
-                <li><a href="dashboard.php">
-                    <i class="fas fa-home"></i>
-                    <span class="nav-item">Home</span>
-                </a></li>
-                <li><a href="#">
-                <i class="fas fa-user"></i>
-                    <span class="nav-item">Profile</span>
-                </a></li>
-                <li><a href="https://cucek.cusat.ac.in/" target="_blank">
-                <i class="fas fa-home"></i>
-                    <span class="nav-item">CUCEK-HOME</span>
-                </a></li>
-                <li><a href="https://cusat.ac.in/" target="_blank">
-                <i class="fas fa-home"></i>
-                    <span class="nav-item">CUSAT-HOME</span>
-                </a></li>
-                <li><a href="settings.php">
-                <i class="fas fa-cog"></i>
-                    <span class="nav-item">Settings</span>
-                </a></li>
-                <li><a href="help.php">
-                <i class="fas fa-question-circle"></i>
-                    <span class="nav-item">Help?</span>
-                </a></li>
-                <li><a href="logout.php" class="logout">
-                <i class="fas fa-sign-out-alt"></i>
-                    <span class="nav-item">Logout</span>
-                </a></li>
-            </ul>
-        </nav>
 
-        <div class="wrapper">
+
+
+<!-- partial:index.partial.html -->
+<div class="wrapper">
   <div class="profile-card js-profile-card">
     <div class="profile-card__img">
       <img src="https://raw.githubusercontent.com/Uzcoin404/Register-page/9efae3a1f7178386748b478ff47cb3bb118a784e/img/undraw_profile_pic_ic5t.svg" alt="profile card">
@@ -106,11 +66,48 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
         </div>
       </div>
 
-     
+      <div class="profile-card-social">
+        <a href="https://www.facebook.com" class="profile-card-social__item facebook" target="_blank">
+          <span class="icon-font">
+              <svg class="icon"><use xlink:href="#icon-facebook"></use></svg>
+          </span>
+        </a>
+
+        <a href="https://twitter.com" class="profile-card-social__item twitter" target="_blank">
+          <span class="icon-font">
+              <svg class="icon"><use xlink:href="#icon-twitter"></use></svg>
+          </span>
+        </a>
+
+        <a href="https://www.instagram.com" class="profile-card-social__item instagram" target="_blank">
+          <span class="icon-font">
+              <svg class="icon"><use xlink:href="#icon-instagram"></use></svg>
+          </span>
+        </a>
+
+        <a href="https://www.behance.net" class="profile-card-social__item behance" target="_blank">
+          <span class="icon-font">
+              <svg class="icon"><use xlink:href="#icon-behance"></use></svg>
+          </span>
+        </a>
+
+        <a href="https://github.com" class="profile-card-social__item github" target="_blank">
+          <span class="icon-font">
+              <svg class="icon"><use xlink:href="#icon-github"></use></svg>
+          </span>
+        </a>
+
+        <a href="https://codepen.io" class="profile-card-social__item codepen" target="_blank">
+          <span class="icon-font">
+              <svg class="icon"><use xlink:href="#icon-codepen"></use></svg>
+          </span>
+        </a>
+
+      </div>
+
       <div class="profile-card-ctr">
-        <form method="post" action="dashboard.php">
-        
-        <button class="profile-card__button button--blue">Home</button>
+        <button class="profile-card__button button--blue js-message-btn">Message Us Personally</button>
+        <button class="profile-card__button button--orange"><a href=dashboard.php>Home</a></button>
       </div>
     </div>
 
@@ -196,7 +193,6 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
 </svg>
 <!-- partial -->
   <script  src="profile-card\dist\script.js"></script>
-
-
+ 
 </body>
 </html>

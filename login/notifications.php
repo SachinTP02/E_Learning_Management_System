@@ -17,12 +17,14 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title> Profile Card</title>
+<title> Notifications</title>
   <meta name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="profile-card\dist\style1.css">
+      <link rel="stylesheet" href="daily-ui-011-flash-message-error-success\dist\style.css">
+      <link rel="stylesheet" href="profile-card\dist\style1.css">
 <link rel="stylesheet" href="dashboard.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
 
 </head>
 <body>
@@ -38,7 +40,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
                     <i class="fas fa-home"></i>
                     <span class="nav-item">Home</span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="studentprofile.php">
                 <i class="fas fa-user"></i>
                     <span class="nav-item">Profile</span>
                 </a></li>
@@ -83,34 +85,25 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
           CUCEK-Cochin University, Kerala,India
         </span>
       </div>
-
-      <div class="profile-card-inf">
-        <div class="profile-card-inf__item">
-          <div class="profile-card-inf__title"><?php echo $_SESSION['stream'] ?></div>
-          <div class="profile-card-inf__txt">Stream</div>
-        </div>
-
-        <div class="profile-card-inf__item">
-          <div class="profile-card-inf__title"><?php echo $_SESSION['regno'] ?></div>
-          <div class="profile-card-inf__txt">Student-I D</div>
-        </div>
-
-        <div class="profile-card-inf__item">
-          <div class="profile-card-inf__title"><?php echo $_SESSION['rollno'] ?></div>
-          <div class="profile-card-inf__txt">Roll Number</div>
-        </div>
-
-        <div class="profile-card-inf__item">
-          <div class="profile-card-inf__title"><?php echo $_SESSION['name'] ?></div>
-          <div class="profile-card-inf__txt">E-Mail I D</div>
-        </div>
-      </div>
-
+      <br><br>
+      &nbsp&nbsp&nbsp&nbsp<div id="container1">
+  <div id="success-box">
+    <div class="dot"></div>
+    <div class="dot two"></div>
+    <div class="face">
+      <div class="eye"></div>
+      <div class="eye right"></div>
+      <div class="mouth happy"></div>
+    </div>
+    <div class="shadow scale"></div>
+    <div class="message"><h1 class="alert">NOTIFICATION!</h1><p>Oops, Come back later.</p></div>
+    <form action="settings.php"><button class="button-box"><h1 class="green">Back</h1></button></form>
+  </div>
+  </div>
+     
      
       <div class="profile-card-ctr">
-        <form method="post" action="dashboard.php">
         
-        <button class="profile-card__button button--blue">Home</button>
       </div>
     </div>
 

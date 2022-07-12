@@ -15,6 +15,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>home</title>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="dashboard.css"/>
@@ -38,23 +39,27 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
                 <i class="fas fa-user"></i>
                     <span class="nav-item">Profile</span>
                 </a></li>
-                <li><a href="https://cucek.cusat.ac.in/">
-                <i class="fas fa-chart-bar"></i>
+                <li><a href="https://cucek.cusat.ac.in/" target="_blank">
+                <i class="fas fa-home"></i>
                     <span class="nav-item">CUCEK-HOME</span>
                 </a></li>
-                <li><a href="https://cusat.ac.in/">
-                <i class="fas fa-tasks"></i>
+                <li><a href="https://cusat.ac.in/" target="_blank">
+                <i class="fas fa-home"></i>
                     <span class="nav-item">CUSAT-HOME</span>
                 </a></li>
                 <li><a href="settings.php">
                 <i class="fas fa-cog"></i>
                     <span class="nav-item">Settings</span>
                 </a></li>
+                <li><a href="studentnote.php">
+                <i class="fas fa-"></i>
+                    <span class="nav-item">Sticky Notes</span>
+                </a></li>
                 <li><a href="help.php">
                 <i class="fas fa-question-circle"></i>
                     <span class="nav-item">Help?</span>
                 </a></li>
-                <li><a href="login.php" class="logout">
+                <li><a href="logout.php" class="logout">
                 <i class="fas fa-sign-out-alt"></i>
                     <span class="nav-item">Logout</span>
                 </a></li>
@@ -70,39 +75,39 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
                     <div class="card">
                         
                         <h3>Information Technology Engineering</h3>
-                        <p>Technology is best when it brings people together!</p>
-                        <button>Get Started</button> 
+                        <p>Technology is Best When it Brings People Together!</p><br>
+                        <form action="subjects.php"><button>Get Started</button> </form>
                     </div>
                     <div class="card">
                         
                         <h3>Computer Science Engineering</h3>
-                        <p>computer science is no more about computers than astronomy is about telescopes!</p>
+                        <p>Computer Science is a Science of Abstraction</p><br>
                         <button>Get Started</button> 
                     </div>
                 
                     <div class="card">
                         
-                        <h3>Electronics and Communication Engineering</h3>
-                        <p>In the world of fluctuations,be someone's regulator!</p>
+                        <h3>Electronics <br>Engineering</h3>
+                        <p>In the World of Fluctuations<br>be Someone's Regulator!</p><br>
                         <button>Get Started</button> 
                     </div>
                     <div class="card">
                         
-                        <h3>Electrical and Electronics Engineering</h3>
-                        <p>Peace be Amplified,World be Rectified!</p>
+                        <h3>Electrical<br> Engineering</h3>
+                        <p>Peace be Amplified<br>World be Rectified!</p><br>
                         <button>Get Started</button> 
                     </div>
                 
                     <div class="card">
                       
-                        <h3>Mechanical Engineering</h3>
-                        <p>When the mechanical rest,the World rust.!</p>
+                        <h3>Mechanical <br>Engineering</h3>
+                        <p>When the Mechanical Rest<br>the World Rust.!</p><br>
                         <button>Get Started</button> 
                     </div>
                     <div class="card">
                        
-                        <h3>Civil Engineering</h3>
-                        <p>The road to Success is always Under construction!</p>
+                        <h3>Civil <br>Engineering</h3>
+                        <p>The Road to Success is Always Under Construction!</p><BR>
                         <button>Get Started</button> 
                     </div>
                 </div>
